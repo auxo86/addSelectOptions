@@ -1,0 +1,24 @@
+<html>
+
+<head></head>
+
+<body>
+    <form>
+        <select name="interest" size="7">
+</select>
+        <input type="button" value="Add Options" onclick="add(this.form.interest)">
+    </form>
+
+    <script>
+        function add(theselect) {
+            var textarray = new Array("Computing", "Music", "Sports")
+            var valuearray = new Array("int0", "int1", "int2")
+            for (i = 0; i < textarray.length; i++) {
+                theselect.options[theselect.length] = new Option(textarray[i], valuearray[i])
+            }
+        }
+
+    </script>
+</body>
+
+</html>
